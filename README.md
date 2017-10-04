@@ -15,7 +15,7 @@ The goal of this library is to give the user the ability to efficiently train De
 
 ## Setup
 
-- If you don't already have Docker, Install Docker from [here](https://www.docker.com/community-edition). 
+- If you don't already have Docker, install it from [here](https://www.docker.com/community-edition). 
 
 - For macOS users with [Homebrew](https://brew.sh/) installed, use `brew cask install docker`. 
 
@@ -35,11 +35,14 @@ cd PySyft
 make run
 ```
 
-If you want create a fresh local Docker image:
+It you want to build a Docker image based on your changes, you can run the following:
 
 ```sh
-docker build -f Development-Dockerfile -t "pysyft" .
-make run-custom docker=pysyft
+# Create the image
+make create-custom-image
+
+# Use your image
+make run-custom 
 ```
 
 #### Tests
