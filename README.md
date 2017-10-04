@@ -32,7 +32,7 @@ cd PySyft
 make run
 ```
 
-If you want create a fresh local Docker image with Jupyter:
+If you want create a fresh local Docker image:
 ```sh
 docker build -f Development-Dockerfile -t "pysyft" .
 make custom docker=pysyft
