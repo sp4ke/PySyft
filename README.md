@@ -71,7 +71,7 @@ python setup.py install
 
 ## Usage
 
-### Using Docker
+### With Docker
 
 #### Start
 
@@ -96,7 +96,7 @@ cd PySyft
 make test
 ```
 
-### Using Local Installation 
+### With Local Installation 
 
 #### Start
 
