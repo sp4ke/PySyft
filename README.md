@@ -80,25 +80,41 @@ Run:
 ```sh
 git clone https://github.com/OpenMined/PySyft.git
 cd PySyft
-make d-run
+make run
 ```
 
 If you want create a fresh local Docker image with Jupyter:
 ```sh
 docker build -f Development-Dockerfile -t "pysyft" .
-make d-custom docker=pysyft
+make custom docker=pysyft
 ```
 
 #### Tests
 
 ```sh
 cd PySyft
-make d-test
+make test
 ```
 
-### Local
+### Local  
 
-### Start
+#### Start
+
+Run:
+
+```sh
+git clone https://github.com/OpenMined/PySyft.git
+cd PySyft
+make local-run
+```
+
+#### Tests
+
+```sh
+cd PySyft
+make local-test
+```
+
 
 
 ## For Contributors
