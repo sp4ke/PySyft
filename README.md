@@ -7,9 +7,9 @@
 
 The goal of this library is to give the user the ability to efficiently train Deep Learning models in a homomorphically encrypted state without needing to be an expert in either. Furthermore, by understanding the characteristics of both Deep Learning and Homomorphic Encryption, we hope to find very performant combinations of the two.  See [notebooks](./notebooks) folder for tutorials on how to use the library.
 
-- [Setup](#setup-install-instructions)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+- [Setup](#setup)
+  - [Docker](#docker--recommended-)
+  - [Local Installation](#local-installation)
 - [Usage](#usage)
   - [Start](#start)
   - [Tests](#tests)
@@ -19,7 +19,20 @@ The goal of this library is to give the user the ability to efficiently train De
 
 ## Setup
 
-### Prerequisites
+### Docker -Recommended-
+
+Install Docker from [its website](https://www.docker.com/).
+For macOS users with [Homebrew](https://brew.sh/) installed, use `brew cask install docker`. Once installed, launch the Docker application. Ensure that docker is installed and running properly by checking the version: `docker -v`.
+
+If you only plan to use Docker you do not need to install any other prerequisites and you can skip to the [Usage](#usage) section.
+
+### Local Installation
+
+If you want to install PySyft locally without using Docker follow the instructions in this section.
+
+Note that the recommended method is using Docker (works on all major operating systems).
+
+#### Prerequisites
 
 - PySyft is based on Python 3.X.
 - Install base libraries first - https://github.com/OpenMined/PySonar/blob/master/README.md#base-libraries
@@ -32,16 +45,9 @@ pip install -r requirements.txt
 python setup.py install
 ```
 
-### Installation
+#### Installation
 
-The recommended method is using Docker (works on all major operating systems).
-
-#### For Docker Users
-
-Install Docker from [its website](https://www.docker.com/).
-For macOS users with [Homebrew](https://brew.sh/) installed, use `brew cask install docker`. Once installed, launch the Docker application. Ensure that docker is installed and running properly by checking the version: `docker -v`.
-
-#### For Anaconda Users
+##### For Anaconda Users
 
 ```
 bash install_for_anaconda_users.sh
@@ -65,28 +71,35 @@ python setup.py install
 
 ## Usage
 
-### Start
+### Docker
 
-Then, run:
+#### Start
+
+Run:
 
 ```sh
 git clone https://github.com/OpenMined/PySyft.git
 cd PySyft
-make run
+make d-run
 ```
 
-If you want create a local Docker with Jupyter:
+If you want create a fresh local Docker image with Jupyter:
 ```sh
 docker build -f Development-Dockerfile -t "pysyft" .
-make custom docker=pysyft
+make d-custom docker=pysyft
 ```
 
-### Tests
+#### Tests
 
 ```sh
 cd PySyft
-make test
+make d-test
 ```
+
+### Local
+
+### Start
+
 
 ## For Contributors
 
