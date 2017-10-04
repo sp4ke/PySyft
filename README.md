@@ -15,14 +15,17 @@ The goal of this library is to give the user the ability to efficiently train De
 
 ## Setup
 
-Install Docker from [its website](https://www.docker.com/).
-For macOS users with [Homebrew](https://brew.sh/) installed, use `brew cask install docker`. Once installed, launch the Docker application. Ensure that docker is installed and running properly by checking the version: `docker -v`.
+- Install Docker from [its website](https://www.docker.com/).
+
+- For macOS users with [Homebrew](https://brew.sh/) installed, use `brew cask install docker`. 
+
+- Ensure that Docker is installed and running properly by checking the version: `docker -v`.
 
 
 
 ## Usage
 
-#### Start Notebook
+#### Start Jupyter Notebook
 
 Run:
 
@@ -33,9 +36,10 @@ make run
 ```
 
 If you want create a fresh local Docker image:
+
 ```sh
 docker build -f Development-Dockerfile -t "pysyft" .
-make custom docker=pysyft
+make run-custom docker=pysyft
 ```
 
 #### Tests
