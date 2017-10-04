@@ -15,7 +15,7 @@ The goal of this library is to give the user the ability to efficiently train De
 
 ## Setup
 
-- Install Docker from [its website](https://www.docker.com/).
+- If you don't already have Docker, Install Docker from [here](https://www.docker.com/community-edition). 
 
 - For macOS users with [Homebrew](https://brew.sh/) installed, use `brew cask install docker`. 
 
