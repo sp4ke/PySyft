@@ -15,12 +15,18 @@ The goal of this library is to give the user the ability to efficiently train De
 
 ## Setup
 
-- If you don't already have Docker, install it from [here](https://www.docker.com/community-edition). 
+- If you don't already have Docker, install it from [here](https://www.docker.com/community-edition).  
 
-- For macOS users with [Homebrew](https://brew.sh/) installed, use `brew cask install docker`. 
+- Ensure that Docker is installed and running properly by checking the version: 
 
-- Ensure that Docker is installed and running properly by checking the version: `docker -v`.
+```sh
+docker -v
+```
 
+It should return something like:
+```
+Docker version 17.07.0-ce, build 87847530f7
+```
 
 
 ## Usage
